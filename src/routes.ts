@@ -1,7 +1,7 @@
 import { verifyGatewayRequest } from '@datz0512/freelancer-shared';
 import { Application } from 'express';
-import { healthRoutes } from './routes/health';
-import { messageRoutes } from './routes/message';
+import { healthRoutes } from '@chat/routes/health';
+import { messageRoutes } from '@chat/routes/message';
 
 const BASE_PATH = '/api/v1/message';
 
