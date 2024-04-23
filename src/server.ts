@@ -14,7 +14,7 @@ import { checkConnection } from '@chat/elasticsearch';
 import { appRoutes } from '@chat/routes';
 import { Channel } from 'amqplib';
 import { Server } from 'socket.io';
-import { createConnection } from './queues/connection';
+import { createConnection } from '@chat/queues/connection';
 
 const SERVER_PORT = 4005;
 const log: Logger = winstonLogger(`${config.ELASTIC_SEARCH_URL}`, 'chatService', 'debug');
